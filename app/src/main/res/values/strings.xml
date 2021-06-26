@@ -1,0 +1,177 @@
+<resources>
+    <string name="app_name">InstaMFT</string>
+    <string name="search">search</string>
+    <string name="activity">Activity</string>
+    <string name="insta_main_toolbar_word">insta main toolbar word</string>
+    <string name="_9">9</string>
+    <string name="following">Following</string>
+    <string name="followers">Followers</string>
+    <string name="posts">Posts</string>
+    <string name="alroid">👨🏻‍💻 Alroid</string>
+    <string name="android_developer">Android Developer</string>
+    <string name="promotions">Promotions</string>
+    <string name="edit_profile">Edit profile</string>
+    <string name="ali_allahverdi">ali.allahverdi</string>
+    <string name="_16">16</string>
+    <string name="_847">847</string>
+    <string name="igtv_description">It’s built for how you use your phone\nand not limited to one minute.</string>
+    <string name="igtv">IGTV</string>
+    <string name="tag_fragment_tittle">Photos and\nvideos of you</string>
+    <string name="tag_fragment_description">when people tag you in photos and\nvideos, they\'ll apear here.</string>
+    <string name="liked_your_photo">liked your photo</string>
+    <string name="number_sample">123</string>
+    <string name="like">like</string>
+    <string name="user_name">user name</string>
+    <string name="description_sample">Still working everyday on live stream and speaking with Italians in Italian only,
+            Thanks for your understanding ❤️ Today I’ve been connected with Milan, talked about
+            photography with a national association of professional photographers 😉
+        </string>
+    <string name="view_all">view all</string>
+    <string name="comments">comments</string>
+    <string name="hours_ago">hours ago</string>
+    <string name="user_name_long">user name _ user name</string>
+    <string name="create_new">Create new</string>
+    <string name="feed_post">Feed Post</string>
+    <string name="story">Story</string>
+    <string name="story_highlights">Story Highlights</string>
+    <string name="igtv_video">IGTV video</string>
+    <string name="guide">Guide</string>
+    <string name="report">Report</string>
+    <string name="turn_on_post_notification">Turn on post notification</string>
+    <string name="copy_link">Copy link</string>
+    <string name="share_to">Share to...</string>
+    <string name="unfollow">Unfollow</string>
+    <string name="mute">Mute</string>
+    <string name="archive">Archive</string>
+    <string name="insights">Insights</string>
+    <string name="your_activity">Your activity</string>
+    <string name="qr_code">QR code</string>
+    <string name="saved">Saved</string>
+    <string name="close_friends">Close friends</string>
+    <string name="discover_people">Discover people</string>
+    <string name="covid_19_info">COVID-19 Info</string>
+    <string name="setting">Setting</string>
+    <string name="likes">likes</string>
+
+    <array name="stories_userName">
+        <item>vahid.bakhtiyari</item>
+        <item>ali.allahverdi</item>
+        <item>hesam.m</item>
+        <item>avnik</item>
+        <item>sara.saghaei</item>
+        <item>erfan.arab</item>
+        <item>mahsa dolati</item>
+        <item>pariya</item>
+        <item>pouria.taheri</item>
+        <item>alireza.t</item>
+        <item>wavaw.w</item>
+    </array>
+
+    <array name="highlights_userName">
+        <item>Github</item>
+        <item>LinkedIn</item>
+        <item>Medium</item>
+        <item>Twitter</item>
+        <item>SoundCloud</item>
+        <item>Telegram</item>
+        <item>Spotify</item>
+        <item>WhatsApp</item>
+        <item>CastBox</item>
+        <item>Facebook</item>
+        <item>Office</item>
+    </array>
+
+    <array name="posts_description">
+        <item>Still working everyday on live stream and speaking with Italians in Italian only,
+            Thanks for your understanding ❤️ Today I’ve been connected with Milan, talked about
+            photography with a national association of professional photographers 😉
+        </item>
+
+        <item>🏊🏼‍♀️ • It seems like this 2020 is a vigorous one-way swim.
+            Keep swimming with the best energy guys 💚😎
+        </item>
+
+        <item>🌳♥️ • As previously said, every single tree, even in a flat landscape, is a living
+            work of art.
+            #whatitalyis
+        </item>
+
+        <item>This is a homage to Pietrapertosa, a village built in the dolomites of Basilicata.
+            Not famous as many other locations in Italy, 😍 this place is discreet and peaceful like
+            the inhabitants I’ve met lately (I think I knew most of them :)
+        </item>
+
+        <item>One of the zen moments of the year, in one of the most beautiful places I have been in
+            2019 😇🌹
+        </item>
+
+        <item>🔥 • When the Sun sets fire to the sky, the time spent with yourself (and with curious
+            fluffy puppies too) becomes divine. #🇳🇴 Here from my series made for @flordecana_en
+        </item>
+
+        <item>Do not cover your eyes - how we like to think sunflowers do the future awaits you my
+            boy. 🌸❤️ just watch out for the busy hornets around here :) Here playing in
+            collaboration
+        </item>
+
+        <item>Best comment will get chance to featured and story 😍❤️🦋
+        </item>
+
+        <item>🔥 • A visit to a magic pine forest, in Tuscany.
+            #sonyalpha #whatitalyis 🍁🍂
+        </item>
+
+        <item>I created a story about the territory lately, the one in which I live with my family,
+            a few kilometers from Bologna. A story made of stills, films and sounds, in the most
+            colorful season, when the grapes begin their journey to become the nectar of the Gods.
+            ☘️🌸💚
+        </item>
+
+        <item>Last day to apply! This time for Italy only. 😌✌🏼 Ultimo giorno per taggare le
+            proprie foto con
+        </item>
+    </array>
+
+    <array name="posts_comment_num">
+        <item>"86"</item>
+        <item>"112"</item>
+        <item>"34"</item>
+        <item>"16"</item>
+        <item>"4"</item>
+        <item>"1"</item>
+        <item>"46"</item>
+        <item>"72"</item>
+        <item>"3"</item>
+        <item>"5"</item>
+        <item>"12"</item>
+    </array>
+
+    <array name="posts_hour">
+        <item>"2"</item>
+        <item>"3"</item>
+        <item>"12"</item>
+        <item>"14"</item>
+        <item>"3"</item>
+        <item>"2"</item>
+        <item>"16"</item>
+        <item>"18"</item>
+        <item>"4"</item>
+        <item>"16"</item>
+        <item>"23"</item>
+    </array>
+
+    <array name="likes_friend_userNames">
+        <item>vahid.bakhtiyari</item>
+        <item>alireza.t</item>
+        <item>hesam.m</item>
+        <item>avnik</item>
+        <item>sara.saghaei</item>
+        <item>erfan.arab</item>
+        <item>mahsa dolati</item>
+        <item>pariya</item>
+        <item>pouria.taheri</item>
+        <item>alireza.t</item>
+        <item>wavaw.w</item>
+    </array>
+
+</resources>

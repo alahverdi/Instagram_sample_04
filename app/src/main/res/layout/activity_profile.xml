@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawer_layout_Profile_activity"
+        style="@style/DrawerIconStyle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_navigation"
+        android:layoutDirection="rtl"
+        tools:context=".ProfileActivity">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.coordinatorlayout.widget.CoordinatorLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!--//////////////////////////////////////////////////////////////////////////////-->
+                <com.google.android.material.appbar.AppBarLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.appbar.MaterialToolbar
+                        android:id="@+id/toolbar_profile"
+                        android:layout_width="match_parent"
+                        android:layout_height="?attr/actionBarSize"
+                        android:theme="@style/MyThemeOverlay_Toolbar">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageButton
+                                android:id="@+id/img_btn_add"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:background="@null"
+                                android:onClick="onclick_add_profile_toolbar"
+                                android:src="@drawable/ic_camera_add" />
+
+                            <TextView
+                                android:id="@+id/tv_userName_toolbar"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="16dp"
+                                android:layout_weight="1"
+                                android:text="@string/ali_allahverdi"
+                                android:textSize="24sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </com.google.android.material.appbar.MaterialToolbar>
+
+                    <RelativeLayout
+                        android:id="@+id/relative_bio"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+                        <ImageView
+                            android:id="@+id/iv_profile"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="24dp"
+                            android:onClick="onclick_iv_profile"
+                            android:src="@drawable/user_photo_02" />
+
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/iv_profile"
+                            android:layout_alignBottom="@id/iv_profile"
+                            android:layout_toStartOf="@id/iv_profile"
+                            android:padding="8dp">
+
+                            <TableRow
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center|bottom"
+                                    android:onClick="onclick_Folloing"
+                                    android:text="@string/_16"
+                                    android:textColor="@color/black_insta"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center|bottom"
+                                    android:onClick="onclick_Followers"
+                                    android:text="@string/_847"
+                                    android:textColor="@color/black_insta"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center|bottom"
+                                    android:onClick="onclick_tv_post"
+                                    android:text="@string/_9"
+                                    android:textColor="@color/black_insta"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center|top"
+                                    android:text="@string/following"
+                                    android:textColor="@color/black_insta" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center|top"
+                                    android:text="@string/followers"
+                                    android:textColor="@color/black_insta" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center|top"
+                                    android:text="@string/posts"
+                                    android:textColor="@color/black_insta" />
+                            </TableRow>
+                        </TableLayout>
+
+                        <TextView
+                            android:id="@+id/tv_userName_bio"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/iv_profile"
+                            android:layout_alignStart="@id/iv_profile"
+                            android:layout_alignEnd="@id/iv_profile"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="24dp"
+                            android:text="@string/alroid"
+                            android:textColor="@color/black_insta"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_bio"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tv_userName_bio"
+                            android:layout_alignEnd="@id/iv_profile"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginEnd="24dp"
+                            android:text="@string/android_developer"
+                            android:textColor="@color/light_gray" />
+
+                        <LinearLayout
+                            android:id="@+id/linear_btn_profile"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_bio"
+                            android:layout_margin="8dp">
+
+                            <com.google.android.material.button.MaterialButton
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="2dp"
+                                android:layout_weight="1"
+                                android:backgroundTint="@color/white"
+                                android:ellipsize="end"
+                                android:maxLines="1"
+                                android:onClick="onclick_insights"
+                                android:text="@string/insights"
+                                android:textAllCaps="false"
+                                android:textColor="@color/black_insta" />
+
+                            <com.google.android.material.button.MaterialButton
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="2dp"
+                                android:layout_weight="1"
+                                android:backgroundTint="@color/white"
+                                android:ellipsize="end"
+                                android:maxLines="1"
+                                android:onClick="onclick_promotions"
+                                android:text="@string/promotions"
+                                android:textAllCaps="false"
+                                android:textColor="@color/black_insta" />
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/btn_editProfile"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="2dp"
+                                android:layout_weight="1"
+                                android:backgroundTint="@color/insta_blue"
+                                android:ellipsize="end"
+                                android:maxLines="1"
+                                android:onClick="onclick_editProfile"
+                                android:text="@string/edit_profile"
+                                android:textAllCaps="false" />
+                        </LinearLayout>
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recyclerView_highlights"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/linear_btn_profile" />
+
+                        <com.google.android.material.tabs.TabLayout
+                            android:id="@+id/tabLayout_profile"
+                            android:layout_width="match_parent"
+                            android:layout_height="?attr/actionBarSize"
+                            android:layout_below="@+id/recyclerView_highlights"
+                            android:background="@color/white"
+                            android:layoutDirection="ltr"
+                            android:scrollbars="vertical"
+                            app:itemIconTint="@color/bottom_nav_color"
+                            app:tabGravity="fill"
+                            app:tabIconTint="@color/black_insta"
+                            app:tabIndicatorColor="@color/black_insta"
+                            app:tabMode="fixed"
+                            app:tabSelectedTextColor="@color/black_insta" />
+                    </RelativeLayout>
+
+                </com.google.android.material.appbar.AppBarLayout>
+                <!--//////////////////////////////////////////////////////////////////////////////-->
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/viewPager_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior" />
+
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/nav_view_profile"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:layoutDirection="ltr"
+            app:headerLayout="@layout/layout_nav_details_header"
+            app:itemTextAppearance="@style/navigation_drawer_TextViewStyle"
+            app:menu="@menu/navigation_menu_profile" />
+
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:layoutDirection="ltr"
+        app:itemIconTint="@color/bottom_nav_color"
+        app:labelVisibilityMode="unlabeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/menu_bottom_nav" />
+
+</RelativeLayout>

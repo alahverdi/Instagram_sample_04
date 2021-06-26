@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/indicator"
+        style="@style/view_separator"
+        android:layout_marginTop="16dp"
+        android:background="@color/light_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_create_new"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="@string/create_new"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/indicator" />
+
+    <TextView
+        android:id="@+id/tv_feedPost"
+        style="@style/bottom_sheet"
+        android:layout_marginTop="8dp"
+        android:text="@string/feed_post"
+        app:drawableStartCompat="@drawable/ic_post_grid"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_create_new" />
+
+    <TextView
+        android:id="@+id/tv_story"
+        style="@style/bottom_sheet"
+        android:layout_marginTop="4dp"
+        android:text="@string/story"
+        app:drawableStartCompat="@drawable/ic_your_activity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_feedPost" />
+
+    <TextView
+        android:id="@+id/tv_highlights"
+        style="@style/bottom_sheet"
+        android:layout_marginTop="4dp"
+        android:text="@string/story_highlights"
+        app:drawableStartCompat="@drawable/ic_covid19_info"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_story" />
+
+
+    <TextView
+        android:id="@+id/tv_igtv"
+        style="@style/bottom_sheet"
+        android:layout_marginTop="4dp"
+        android:text="@string/igtv_video"
+        app:drawableStartCompat="@drawable/ic_igtv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_highlights" />
+
+    <TextView
+        android:id="@+id/tv_guide"
+        style="@style/bottom_sheet"
+        android:layout_marginTop="4dp"
+        android:text="@string/guide"
+        app:drawableStartCompat="@drawable/ic_direct"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_igtv" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
